@@ -12,12 +12,12 @@ function App() {
 
   useEffect(() => {
     async function getRecipes(){
-      const response = (await axios.get('http://localhost:3000/api/recipes')).data
+      const response = (await axios.get('https://livro-de-receitas-api.vercel.app/api/recipes')).data
       setRecipes(response)
     }
 
     getRecipes()
-  }, [])
+  }, [isModalOpen])
 
   return (
     <>

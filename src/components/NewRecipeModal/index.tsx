@@ -26,7 +26,7 @@ function  NewRecipeModal({isModalOpen, setIsModalOpen}: NewRecipeModalProps){
     getImageLink()
 
     async function createRecipe(imageLink: string){
-      axios.post('http://localhost:3000/api/recipes', {
+      axios.post('https://livro-de-receitas-api.vercel.app/api/recipes', {
         linkRecipe: linkRecipe,
         imageLink: imageLink,
         name: name
