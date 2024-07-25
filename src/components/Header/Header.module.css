@@ -1,0 +1,38 @@
+.header{
+  background-color: #fd8601;
+  margin: 0;
+  padding: 1em 1em;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  gap: 12px;
+}
+.logo span:first-child{
+  font-size: 1.2em;
+  display: block;
+}
+.logo span:last-child{
+  font-size: 1.75em;
+  font-weight: 800;
+}
+
+.plusSearchContainer{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  gap: 24px;
+}
+.plusIcon{
+  width: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 413px) {
+  .header{
+    flex-direction: column;
+  }
+  .logo{
+    text-align: start;
+  }
+}

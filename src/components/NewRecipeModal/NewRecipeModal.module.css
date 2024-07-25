@@ -1,0 +1,47 @@
+.overLay{
+  background-color: rgba(0,0,0,0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+
+.form{
+  width: 50%;
+  background-color: white;
+  padding: 1.5em;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+}
+
+.form input{
+  border-radius: .5em;
+  border: 1px solid #000;
+  font-size: 1em;
+  padding: .5em;
+}
+
+.form button{
+  background-color: #fd8601;
+  border: none;
+  padding: .5em;
+  font-size: 1em;
+  font-weight: 600;
+  border-radius: .5em;
+  color: #fff;
+  margin-top: 2em;
+  cursor: pointer;
+}
+
+@media (max-width: 413px) {
+  .form{
+    width: 100%;
+  }
+}

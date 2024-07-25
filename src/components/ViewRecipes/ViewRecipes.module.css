@@ -1,0 +1,13 @@
+.recipesContainer{
+  display: flex;
+  gap: 12px;
+  padding: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (min-width: 450px) {
+  .recipesContainer{
+    justify-content: start;
+  }
+}
